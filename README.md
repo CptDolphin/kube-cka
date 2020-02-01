@@ -35,14 +35,14 @@ EOF
 ```
 
 #### Official Kube Documentation
-[Kubernetes Components Overview]: https://kubernetes.io/docs/concepts/overview/components/
-[Api Server]: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/
-[Scheduler]: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/ 
-[Controller Manager]: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/
-[etcd Datastore]: https://kubernetes.io/docs/concepts/overview/components/#etcd)
-[kubelet]: https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/
-[kube-proxy]: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/
-[Container Runtime]: https://kubernetes.io/docs/concepts/overview/components/#container-runtime
+* [Kubernetes Components Overview](https://kubernetes.io/docs/concepts/overview/components/)
+* [Api Server](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
+* [Scheduler](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/)
+* [Controller Manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/)
+* [etcd Datastore](https://kubernetes.io/docs/concepts/overview/components/#etcd)
+* [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/)
+* [kube-proxy](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/)
+* [Container Runtime](https://kubernetes.io/docs/concepts/overview/components/#container-runtime)
 
 ---
 
@@ -84,6 +84,6 @@ EOF
 |kubectl get pods --field-selector status.phase=Running|Use field selectors|
 
 #### Official Kube Documentation
-[Spec and Status](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/#object-spec-and-status)
-[API Versioning](https://kubernetes.io/docs/concepts/overview/kubernetes-api/#api-versioning)
-[Field Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/)
+* [Spec and Status](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects/#object-spec-and-status)
+* [API Versioning](https://kubernetes.io/docs/concepts/overview/kubernetes-api/#api-versioning)
+* [Field Selectors](https://kubernetes.io/docs/concepts/overview/working-with-objects/field-selectors/)
