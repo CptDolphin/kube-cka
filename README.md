@@ -11,7 +11,8 @@
 * container-runtime - program that runs your container (docker, rkt, containerd)
 
 #### Usefull commands:
-||command||description||
+|Command|Description|
+| ----- | --------- |
 |kubectl get nodes|list all the nodes in the cluster|
 |kubectl get pods --all-namespaces|list pods in all namespaces|
 |kubectl get pods --all-namespaces -o wide|list all the pods in the cluster in detail|
@@ -34,14 +35,15 @@ EOF
 ```
 
 #### Official Kube Documentation
-[Kubernetes Components Overview](https://kubernetes.io/docs/concepts/overview/components/)
-[Api Server](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)
-[Scheduler](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/)
-[Controller Manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/)
-[etcd Datastore](https://kubernetes.io/docs/concepts/overview/components/#etcd)
-[kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/)
-[kube-proxy](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/)
-[Container Runtime](https://kubernetes.io/docs/concepts/overview/components/#container-runtime)
+[Kubernetes Components Overview]: https://kubernetes.io/docs/concepts/overview/components/
+[Api Server]: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/
+[Scheduler]: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-scheduler/ 
+[Controller Manager]: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/
+[etcd Datastore]: https://kubernetes.io/docs/concepts/overview/components/#etcd)
+[kubelet]: https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/
+[kube-proxy]: https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/
+[Container Runtime]: https://kubernetes.io/docs/concepts/overview/components/#container-runtime
+
 ---
 
 ## Kubernetes API Primitives
@@ -72,7 +74,8 @@ EOF
 ```
 
 #### Usefull commands
-||Command||Description||
+|Command|Description|
+| ----- | --------- |
 |kubectl create -f nginx.yaml|Create deployment from YAML|
 |kubectl get deployment nginx-deployment -o yaml|Get the full YAML back|
 |kubectl get pods --show-labels|Show all pod labels|
