@@ -114,3 +114,27 @@ kubectl get nodes --show-labels
 ```
 kubectl label node minikube writeHereName=nginxnode
 ```
+
+---
+## Secrets
+
+### Get secret name, get its current data
+```
+kubectl get secrets
+kubectl get secret <name> -o yaml
+```
+
+### Encrypt new data and push into secret
+```
+echo -n 'password' | base64
+cat <<EOF> secret.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+name: mysecret
+type: Opaque
+data:
+<prev data truncated from `get secret -o yaml`>
+password: em9tYmll
+EOF
+```
