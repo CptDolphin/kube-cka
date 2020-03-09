@@ -8,8 +8,7 @@ kubectl get pods -o=jsonpath="{.items[*]['metadata.name', 'metadata.namespace']}
 kubectl get pods -o jsonpath='{.spec.containers[].image}' 
 ```
 
-### Get template of pod that would be executed
-```
+### Get template of pod that would be executed ```
 kubectl run nginx --image nginx --restart Never --dry-run -o yaml > nginx_pod.yaml
 ```
 
@@ -137,4 +136,12 @@ data:
 <prev data truncated from `get secret -o yaml`>
 password: em9tYmll
 EOF
+```
+
+---
+## Pods
+
+### Restart container inside pod
+```
+kubectl exec -it [POD_NAME] -c [CONTAINER_NAME] -- /bin/sh -c "kill 1"
 ```
